@@ -7,7 +7,7 @@ const repl = new XpresserRepl();
 
 // Set Config Provider
 repl.setXpresserProvider(() => {
-    const { $ } = require("./main") as typeof import("./main");
+    const { $ } = require("./app") as typeof import("./app");
     return $;
 });
 

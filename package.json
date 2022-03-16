@@ -8,11 +8,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "npm run build && node build/app.js",
+    "start": "npm run build && node build/main.js",
     "build": "npx xjs @stack tsc",
     "ts-watch": "npx tsc --watch",
-    "ts-dev": "npx ts-node-dev --respawn server.ts",
-    "js-dev": "npx nodemon build/server.js"
+    "ts-dev": "npx ts-node-dev --respawn main.ts",
+    "js-dev": "npx nodemon build/main.js"
   },
   "dependencies": {
     "@xpresser/env": "^2.0.2",

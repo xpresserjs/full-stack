@@ -1,18 +1,8 @@
-// Import Xpresser
-import xpresser = require("xpresser");
+import { $ } from "./app";
+
 /**
- * Boot Xpresser with your config
- *
- * Get config from config.ts
- * See https://xpresserjs.com/configuration/
+ * All Server related Events should be registered here
  */
-import config = require("./config");
 
-// Initialize Xpresser
-const $ = xpresser.init(config, { exposeDollarSign: false });
-
-// Initialize Typescript
-$.initializeTypescript(__filename);
-
-// Expose $
-export { $ };
+// Boot Xpresser
+$.boot();

@@ -1,4 +1,4 @@
-import { $ } from "../main";
+import { $ } from "../app";
 
 class MyRequestEngine extends $.extendedRequestEngine() {
     /**

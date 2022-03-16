@@ -1,6 +1,6 @@
 {
   "dev": {
-    "main": "app.ts",
+    "main": "main.ts",
     "start_cron": "npx ts-node",
     "start_server": "npx ts-node-dev --respawn --transpile-only",
     "start_console": "npx ts-node",
@@ -8,7 +8,7 @@
     "repl": "build/repl.js"
   },
   "prod": {
-    "main": "build/app.js",
+    "main": "build/main.js",
     "start_cron": "pm2 start",
     "stop_cron": "pm2 stop",
     "start_server": "pm2 start",
