@@ -12,6 +12,12 @@ Full Stack App. Includes a few features that is used in most of the apps.
 
 ### Use
 
+```shell
+xjs new my-app
+# The select "Full Stack App"
+```
+The command above clones this folder and unlinks the .git folder.
+
 1. Clone Or Download
 2. Run `yarn` or `npm` install.
 3. Run `npm run ts-dev` or `yarn run ts-dev`
