@@ -26,20 +26,10 @@ The command above clones this folder and unlinks the .git folder.
 
 ### Package Commands
 
-```json
-{
-  "build": "xjs @stack tsc",
-  "ts-watch": "tsc --watch",
-  "ts-dev": "ts-node-dev --respawn --transpile-only server.ts",
-  "start": "npm run build && node build/app.js",
-  "start-dev": "nodemon build/app.js"
-}
-```
-
+- **start**: Builds file and runs built file.
 - **build**: Build Typescript files
 - **ts-watch**: Compile typescript in realtime while watching or changes.
 - **ts-dev**: Start app in typescript mode.
-- **start**: Builds file and runs built file.
 - **js-dev**: Uses `nodemon` to run the built file. This is useful when using tsc watch.
 
 #### What next?
