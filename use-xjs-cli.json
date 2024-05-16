@@ -1,13 +1,13 @@
 {
   "dev": {
-    "main": "app.ts",
+    "main": "main.ts",
     "start_cron": "npx ts-node",
     "start_server": "npx tsx watch",
     "start_console": "npx ts-node",
     "jobs_path": "backend/jobs"
   },
   "prod": {
-    "main": "dist/app.js",
+    "main": "dist/main.js",
     "start_cron": "npx pm2 start",
     "stop_cron": "npx pm2 stop",
     "start_server": "npx pm2 start",
