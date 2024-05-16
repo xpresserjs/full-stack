@@ -1,26 +1,25 @@
 {
   "dev": {
-    "main": "main.ts",
+    "main": "app.ts",
     "start_cron": "npx ts-node",
-    "start_server": "npx ts-node-dev --respawn --transpile-only",
+    "start_server": "npx tsx watch",
     "start_console": "npx ts-node",
-    "jobs_path": "backend/jobs",
-    "repl": "build/repl.js"
+    "jobs_path": "backend/jobs"
   },
   "prod": {
-    "main": "build/main.js",
-    "start_cron": "pm2 start",
-    "stop_cron": "pm2 stop",
-    "start_server": "pm2 start",
-    "stop_server": "pm2 stop",
+    "main": "dist/app.js",
+    "start_cron": "npx pm2 start",
+    "stop_cron": "npx pm2 stop",
+    "start_server": "npx pm2 start",
+    "stop_server": "npx pm2 stop",
     "start_console": "node",
-    "jobs_path": "backend/jobs",
-    "repl": "build/repl.js"
+    "jobs_path": "build/backend/jobs"
   },
+  "async_cron_jobs": false,
   "stacks": {
     "tsc": [
       "rm -rf build",
-      "tsc -p tsconfig.json"
+      "npx tsc --build"
     ]
   }
 }

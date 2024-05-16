@@ -11,7 +11,7 @@ const AppController = <Controller.Object>{
      * Index Method for "/"
      * @returns {string}
      */
-    index: () => "<h1>My xpresser Typescript lite project</h1>",
+    index: (): string => "<h1>My xpresser project</h1>",
 
     /**
      * 404 Page handler

@@ -2,7 +2,7 @@ import { $ } from "../app";
 
 class MyRequestEngine extends $.extendedRequestEngine() {
     /**
-     * Declare custom functions you want on `http` object
+     * Declare custom functions you want on `http` object,
      * For example:
      */
 
@@ -11,7 +11,6 @@ class MyRequestEngine extends $.extendedRequestEngine() {
      * `notFound` should now be accessible on `http` object
      */
     notFound() {
-        console.trace(`A 404 error just occurred!`);
         return this.status(404).send("Not Found");
     }
 }
