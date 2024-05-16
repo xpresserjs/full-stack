@@ -4,7 +4,8 @@
     "start_cron": "npx ts-node",
     "start_server": "npx tsx watch",
     "start_console": "npx ts-node",
-    "jobs_path": "backend/jobs"
+    "jobs_path": "backend/jobs",
+    "repl": "build/repl.js"
   },
   "prod": {
     "main": "dist/main.js",
@@ -13,7 +14,8 @@
     "start_server": "npx pm2 start",
     "stop_server": "npx pm2 stop",
     "start_console": "node",
-    "jobs_path": "build/backend/jobs"
+    "jobs_path": "build/backend/jobs",
+    "repl": "build/repl.js"
   },
   "async_cron_jobs": false,
   "stacks": {
